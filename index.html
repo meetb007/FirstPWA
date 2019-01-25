@@ -1,0 +1,78 @@
+<!-- this is a comment -->
+<!DOCTYPE html>
+<!-- html tag comes here-->
+<!DOCTYPE html>
+<html>
+
+  <!-- head tag comes here-->
+  <head>
+
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,500"
+      rel="stylesheet"
+    />
+
+    <!-- <meta name="theme-color" content="#ffffff" /> -->
+
+    <!-- title goes here -->
+    <title>PWA Workshop</title>
+
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <!-- <link rel="shortcut icon" href="icons/w.png" /> -->
+    <!-- <link rel="manifest" href="./manifest.json" /> -->
+
+  </head>
+
+  <!-- body tag goes here-->
+  <body>
+
+    <header>
+      <h1 class='center'>
+
+       Whats the word?
+
+    <!-- header tag goes here -->
+      <!-- h1 tag with class center -->
+        <!-- add the name to be displayed on the webpage -->
+      </h1>
+    </header>
+    <div id='form'>
+    <!-- divison with id form -->
+      <label for="searchBox" >Enter Word</label>
+      <!-- input and its parameter -->
+      <input
+        type="text"
+        name="word"
+        placeholder="Search for any word"
+        id="searchBox"
+      />
+      <span class='errorMsg'>
+      <!-- span tag with class errorMsg -->
+
+      </span>
+      <button onclick="getData()"  > Search
+      <!-- button tag -->
+        <!-- name to be given to the button -->
+      </button>
+    </div>
+
+    <div id="result">
+      <div id="title"></div>
+      <div id="def">
+        <i><div id="partOfSpeech"></div></i> 
+        <div id="defs">
+          <br />
+          <ul id="list"></ul> 
+        </div>
+        <span class="noRes"></span>
+      </div>
+    </div>
+    <!-- add js file -->
+    <script type="text/javascript" src='./app.js'></script>
+  </body>
+  
+</html>
